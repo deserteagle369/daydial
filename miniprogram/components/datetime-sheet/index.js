@@ -1,3 +1,10 @@
+/**
+ * mp-datetime-sheet · 微信小程序日期/时间选择器（月历 + 24 小时表盘）
+ * https://github.com/deserteagle369/mp-datetime-sheet
+ * MIT License · Copyright (c) 2026 deserteagle369
+ * 复制、修改或再分发时请保留本注释（MIT 要求保留版权声明）。
+ */
+
 // 从周日开始的 7 项；组件唯一的语言相关内容
 const DEFAULT_WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六'];
 
