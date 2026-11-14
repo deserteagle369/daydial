@@ -1,7 +1,7 @@
 {
   "name": "mp-datetime-sheet",
   "version": "1.0.0",
-  "description": "微信小程序日期时间选择器：底部弹出，月历选日期 + 24 小时表盘选时间，适合约赛/订场/报名预约",
+  "description": "微信小程序日期时间选择器：底部弹出，一个弹窗内月历选日期 + 24 小时表盘选时间，一次确认，适合约赛/订场/报名预约",
   "miniprogram": "miniprogram/components/datetime-sheet",
   "files": [
     "miniprogram/components/datetime-sheet"
