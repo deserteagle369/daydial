@@ -99,8 +99,8 @@
     </block>
 
     <view class="dt-actions">
-      <view class="dt-cancel" bindtap="onCancel">{{cancelText}}</view>
-      <view class="dt-confirm" bindtap="onConfirm">{{confirmText}}</view>
+      <view class="dt-cancel" bindtap="onCancel">{{cancelText || '✕'}}</view>
+      <view class="dt-confirm" bindtap="onConfirm">{{confirmText || '✓'}}</view>
     </view>
   </view>
 </view>

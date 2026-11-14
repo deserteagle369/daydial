@@ -193,8 +193,8 @@ Component({
     weekdays: { type: Array, value: DEFAULT_WEEKDAYS },
     themeColor: { type: String, value: '' },
     themeColorSoft: { type: String, value: '' },
-    cancelText: { type: String, value: '取消' },
-    confirmText: { type: String, value: '确定' }
+    cancelText: { type: String, value: '' },
+    confirmText: { type: String, value: '' }
   },
 
   data: {
