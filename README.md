@@ -5,6 +5,7 @@
 面向**约赛 / 订场 / 活动报名 / 预约到店**场景的底部弹出日期时间组件：
 
 - **一个弹窗同时拿到日期 + 时间**：表头左边日期、右边时间，点哪边切哪边，一次 ✓ 返回 `YYYY-MM-DD HH:mm`——不跳页、不弹第二次、切换时不丢已选值
+- **底部「✕ / ✓」两个按钮**：放弃有明确出口，不用猜"点遮罩能关"；文案可用 `cancel-text` / `confirm-text` 换成汉字
 - 月历选日期（支持最小/最大日期）
 - 24 小时双圈表盘选时间（分钟步进可配）
 - 界面以数字与符号为主，几乎无文案，易嵌入多语言项目
@@ -96,6 +97,8 @@ npm install daydial
   time-value="{{time}}"
   min-date="{{minDate}}"
   step-minutes="{{5}}"
+  cancel-text="取消"
+  confirm-text="确定"
   bind:confirm="onDtConfirm"
   bind:close="onDtClose"
 />
@@ -129,13 +132,17 @@ onDtClose() {
 | step-minutes | Number | 5 | 分钟刻度 |
 | week-start | Number | 1 | `0`=周日，`1`=周一 |
 | weekdays | Array | 日一二三四五六 | 7 项，从周日开始 |
-| theme-color | String | 空（`#6B37E5`） | 主色：选中日期/小时、表针、确认按钮 |
-| theme-color-soft | String | 空（`#f4f1fa`） | 表盘圆形底色 |
+| theme-color | String | 空（`#6B37E5`） | 主色：选中日期/小时、表针、✓ 按钮底色、✕ 按钮文字 |
+| theme-color-soft | String | 空（`#f4f1fa`） | 表盘圆形底色、✕ 按钮底色 |
+| cancel-text | String | `✕` | 取消按钮内容，传 `取消` 即变文字按钮 |
+| confirm-text | String | `✓` | 确认按钮内容，传 `确定` 即变文字按钮 |
 
 ## 事件
 
 - `confirm`：`{ date, time, datetime }`
-- `close` / `cancel`：关闭面板
+- `close` / `cancel`：关闭面板（点「✕」或点遮罩都会触发这两个事件）
+
+取消不返回数据，也不会修改外部值；下次 `show` 为 `true` 时组件会用 `date-value` / `time-value` 重新初始化，所以用户放弃后不会看到上次的临时选择。
 
 ## 主题色
 

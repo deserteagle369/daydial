@@ -235,8 +235,33 @@
   font-weight: 600;
 }
 
-.dt-confirm {
+.dt-actions {
+  display: flex;
+  gap: 16rpx;
   margin: 16rpx 24rpx 8rpx;
+}
+
+.dt-cancel {
+  flex: 0 0 auto;
+  min-width: 136rpx;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  color: var(--dt-primary, #6B37E5);
+  font-size: 40rpx;
+  font-weight: 600;
+  background: var(--dt-primary-soft, #f4f1fa);
+  border-radius: 44rpx;
+}
+
+.dt-cancel:active {
+  opacity: 0.85;
+}
+
+.dt-confirm {
+  flex: 1;
   height: 88rpx;
   line-height: 88rpx;
   text-align: center;

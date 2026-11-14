@@ -192,7 +192,9 @@ Component({
     weekStart: { type: Number, value: 1 },
     weekdays: { type: Array, value: DEFAULT_WEEKDAYS },
     themeColor: { type: String, value: '' },
-    themeColorSoft: { type: String, value: '' }
+    themeColorSoft: { type: String, value: '' },
+    cancelText: { type: String, value: '' },
+    confirmText: { type: String, value: '' }
   },
 
   data: {
@@ -295,6 +297,11 @@ Component({
     },
 
     onMask: function () {
+      this.close();
+    },
+
+    // 底部「✕」按钮：与点遮罩同一行为（cancel + close 事件）
+    onCancel: function () {
       this.close();
     },
 
