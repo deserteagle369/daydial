@@ -1,6 +1,6 @@
 /**
- * mp-datetime-sheet · 微信小程序日期/时间选择器（月历 + 24 小时表盘）
- * https://github.com/deserteagle369/mp-datetime-sheet
+ * daydial · 微信小程序日期/时间选择器（月历 + 24 小时表盘）
+ * https://github.com/deserteagle369/daydial
  * MIT License · Copyright (c) 2026 deserteagle369
  * 复制、修改或再分发时请保留本注释（MIT 要求保留版权声明）。
  */

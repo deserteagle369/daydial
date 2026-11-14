@@ -1,4 +1,6 @@
-# 微信小程序预约选时 · 日历 + 表盘时间选择器（一个弹窗选完）
+# 选时盘 daydial · 微信小程序预约选时（一个弹窗选完日期 + 时间）
+
+> `daydial` = **day**（月历选日）+ **dial**（表盘选时）；中文名「选时盘」。
 
 面向**约赛 / 订场 / 活动报名 / 预约到店**场景的底部弹出日期时间组件：
 
@@ -10,7 +12,7 @@
 
 > 本仓库是可运行的演示小程序 + 可拆走的组件。组件免费开源（MIT）；若需要整站预约/运动小程序搭建或定制，见文末「合作与定制」。
 
-![演示](docs/screenshots/mp-datetime-sheet.gif)
+![演示](docs/screenshots/daydial.gif)
 
 | 月历选日 | 表盘选时 | 仅日期 | 仅时间 |
 |---|---|---|---|
@@ -47,7 +49,7 @@
 1. 在小程序项目根目录（`package.json` 所在处）安装：
 
 ```bash
-npm install mp-datetime-sheet
+npm install daydial
 ```
 
 2. 微信开发者工具菜单「工具 → 构建 npm」
@@ -66,7 +68,7 @@ npm install mp-datetime-sheet
 ```json
 {
   "usingComponents": {
-    "datetime-sheet": "mp-datetime-sheet/index"
+    "datetime-sheet": "daydial/index"
   }
 }
 ```
@@ -188,7 +190,7 @@ page {
 ## 目录结构
 
 ```text
-mp-datetime-sheet/
+daydial/
 ├── miniprogram/
 │   ├── components/datetime-sheet/   # 可单独复制走的组件
 │   └── pages/demo/                  # 演示页
@@ -204,7 +206,7 @@ mp-datetime-sheet/
 本组件以 MIT 发布，**不强制署名、商用无需授权或付费**。但如果它帮你省了时间，欢迎留一行出处——这是我继续维护的主要动力：
 
 ```md
-日期时间选择器：[mp-datetime-sheet](https://github.com/deserteagle369/mp-datetime-sheet)（MIT）
+日期时间选择器：[daydial](https://github.com/deserteagle369/daydial)（MIT）
 ```
 
 按成本从低到高，挑一个放：
